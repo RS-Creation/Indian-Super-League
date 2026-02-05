@@ -6,39 +6,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *{box-sizing:border-box;}
-body{
-  margin:0;
-  font-family:Inter, Arial, sans-serif;
-  background:#071b3a;
-  display:flex;
-  color:#fff;
-  justify-content:center;
-  padding-top: 1.35cm; /* 🔥 header height same */
-}
-.wrapper{
-  width:100%;
-  max-width:430px;
-}
-.hero{
-	width: 100%;
-	margin-left: %;
-  position:relative;
-  height:280px;
-}
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,  rgba(22,18,65,.92) 40%, rgba(122,30,80,.95) 100%);
-}
-.content{
-  position:absolute;
-  inset:0;
-  z-index:2;
-  padding:22px 18px 26px;
-  display:flex;
-  flex-direction:column;
-}
+body{margin:0;font-family:Inter, Arial, sans-serif;background:#071b3a;display:flex;color:#fff;justify-content:center;padding-top: 1.35cm; }
+.wrapper{width:100%;max-width:430px;}
+.hero{width: 100%;position:relative;height:280px;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,  rgba(22,18,65,.92) 40%, rgba(122,30,80,.95) 100%);}
+.content{position:absolute;inset:0;z-index:2;padding:22px 18px 26px;display:flex;flex-direction:column;}
 .final{
   align-self:center;
   background:#ffffff;
@@ -158,7 +130,6 @@ body{
   background-position:center;
   background-repeat:no-repeat;
   opacity: 50%;
-	background-image: url("https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/stadium/Mohun%20Bagan.png");
 }
 .top-section{
     background:linear-gradient(180deg,#0b1230,#05081a);
@@ -343,7 +314,6 @@ small{color:#A8A8A8;font-size:12px;}
 
 /* Pitch */
 .lineup-pitch{
-  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Football_field.svg/500px-Football_field.svg.png");
   margin:20px;
   background-size:cover;
   background-position:center;
@@ -487,7 +457,7 @@ small{color:#A8A8A8;font-size:12px;}
 .headname {  
     color: white;  
     font-size: 1.3rem;  
-    font-family: sans-serif;  
+    font-family: serif;  
     letter-spacing: 1px;
     font-weight: 1500;  
     margin-left: 0.25cm;  
@@ -544,6 +514,14 @@ small{color:#A8A8A8;font-size:12px;}
 }  
 .content-space { height:0px; } /* Space for fixed header */  
   
+  .lineup-pitch{
+  background-image:url("https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/stadium/stadium.png");
+  }
+  
+  .stadium {
+	background-image: url("https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/stadium/Mohun%20Bagan.png");
+}
+  
 /* Responsive */  
 @media (max-width: 760px) {  
     .hamburger { margin-left: 9.7cm; }  
@@ -556,8 +534,8 @@ small{color:#A8A8A8;font-size:12px;}
 	
 <div class="wrapper">
 	<div class="main-header">  
-  <img class="head-logo" src="https://upload.wikimedia.org/wikipedia/en/b/b0/Indian_Super_League_logo.svg"/>  
-  <h3 class="headname">𝐈𝐧𝐝𝐢𝐚𝐧 𝐒𝐮𝐩𝐞𝐫 𝐋𝐞𝐚𝐠𝐮𝐞</h3>  
+<img class="head-logo" src="https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/logo/Isl.png"/>
+  <h3 class="headname">Indian Super League</h3>  
 </div>  
   
 <div class="hamburger" id="hamburger">  
@@ -567,28 +545,25 @@ small{color:#A8A8A8;font-size:12px;}
 </div>  
   
 <div class="menu" id="menu">  
-  <a href="home/index.html">Home</a>  
+  <a href="index.html">Home</a>  
   <a href="fixtures/fixtures.html">Fixtures</a>
   <a href="highlights/highlights.html">Highlights</a>
   <a href="table/table.html">Point Table</a>  
   <a href="stats/player stats.html">Player Stats</a>  
   <a href="stats/club stats.html">Club Stats</a>
   <a href="club/clubs.html">Clubs</a>   
-  <a href="about/about.html">About</a>  
-</div>  
+  <a href="about/about.html">About</a></div>  
   
-<div class="content-space"></div>  
-	<div class="stadium"></div>
-  <div class="hero">
-    <div class="content">
-      <div class="final">Match Week 1</div><div class="meta">
+<div class="content-space"></div><div class="stadium"></div><div class="hero"><div class="content">
+<div class="final">Match Week 1</div>
+<div class="meta">
     SATURDAY, 14 FEB, 2026 &nbsp;|&nbsp; <i class="fa-regular fa-clock"></i>17:00<br>
     <i class="fa-solid fa-building"></i> VYBK Stadium, Kolkata
   </div>
 
   <div class="scorecard">
     <div class="team">
-      <div class="logo"><img src="https://raw.githubusercontent.com/RS-Creation/Indian-Super-League/refs/heads/main/img/club/logo/Mohun%20Bagan.png"></div>
+      <div class="logo"><img src="https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/logo/Mohun%20Bagan.png"></div>
       <div class="goals left"></div>
       <div class="team-name">Mohun Bagan</div>
     </div>
@@ -596,7 +571,7 @@ small{color:#A8A8A8;font-size:12px;}
     <div class="ft">VS</div>
 
     <div class="team">
-      <div class="logo"><img style="margin-top: 0.2cm;" src="https://raw.githubusercontent.com/RS-Creation/Indian-Super-League/refs/heads/main/img/club/logo/Kerala%20Blasters.png"></div>
+      <div class="logo"><img style="margin-top: 0.2cm;" src="https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/logo/Kerala%20Blasters.png"></div>
       <div class="goals right"></div>
       <div class="team-name">Kerala Blasters</div>
     </div>
@@ -689,8 +664,8 @@ const formations={
 };
 
 const teamData={
-  mbsg:{name:"Mohun Bagan Super Giant",formation:"4-2-3-1",logo:"https://raw.githubusercontent.com/RS-Creation/Indian-Super-League/refs/heads/main/img/club/logo/Mohun%20Bagan.png"},
-  bfc:{name:"Bengaluru FC",formation:"4-3-3",logo:"https://raw.githubusercontent.com/RS-Creation/Indian-Super-League/refs/heads/main/img/club/logo/Bengaluru.png"}
+  mbsg:{name:"Mohun Bagan Super Giant",formation:"4-2-3-1",logo:"https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/logo/Mohun%20Bagan.png"},
+  bfc:{name:"Bengaluru FC",formation:"4-3-3",logo:"https://raw.githubusercontent.com/Indian-Super-League/Indian-Super-League/refs/heads/main/img/club/logo/Bengaluru.png"}
 };
 
 function applyFormation(pitch,formation){
