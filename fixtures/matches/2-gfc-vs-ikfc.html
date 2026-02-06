@@ -533,9 +533,8 @@ small{color:#A8A8A8;font-size:12px;}
 <body>
 	
 <div class="wrapper">
-	<div class="main-header"> 
-		<a href="https://indian-super-league.github.io/Indian-Super-League/index.html">
-<img class="head-logo" src="https://raw.githubusercontent.com/indian-super-league/Indian-Super-League/refs/heads/main/img/logo/Isl.png"/></a>
+	<div class="main-header">		
+<img onclick="openVideo('https://indian-super-league.github.io/Indian-Super-League/home/index.html')" class="head-logo" src="https://raw.githubusercontent.com/indian-super-league/Indian-Super-League/refs/heads/main/img/logo/Isl.png"/>
   <h3 class="headname">Indian Super League</h3>  
 </div>  
   
@@ -706,5 +705,12 @@ const menu=document.getElementById("menu");
 hamburger.addEventListener("click",()=>{hamburger.classList.toggle("active"); menu.classList.toggle("active");});  
 menu.addEventListener("click",e=>{const link=e.target.closest("a"); if(!link) return; hamburger.classList.remove("active"); menu.classList.remove("active");});  
 </script>
+	<script>
+function openVideo(url){
+    if(url){
+        window.location.href = url;
+    }
+}
+	</script>
 </body>
 	</html>
